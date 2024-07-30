@@ -152,6 +152,20 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 /*** Navbar End ***/
 
+/*** Menu ***/
+
+.bg-card {
+    background-color: var(--bs-primary); /* Adjust the color as needed */
+    padding: 30px; /* Adjust the padding as needed */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    transition: background-color 0.5s ease; /* Optional: Add transition for smooth effect */
+}
+
+.bg-card:hover {
+    background-color: #000000; /* Adjust the hover color as needed */
+    cursor: pointer;
+}
+
 
 /*** Events Start ***/
 .event .tab-class .nav-item a.active {

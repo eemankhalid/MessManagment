@@ -44,38 +44,36 @@ const Menu = () => {
               <div id="tab-6" className="tab-pane fade show active p-0">
                 <div className="row g-4">
                   <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
-                    <div className="d-flex rounded overflow-hidden">
-                      <img src="src/assets/img/menu-1.jpg" className="img-fluid" style={{ width: '100px' }} alt="Menu Item 1" />
-                      <div className="flex-fill d-flex align-items-center bg-white px-4">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/breakfast.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3 ">
                         <div className="d-flex flex-column">
-                          <h5 className="text-start">Breakfast</h5>
-                          <p className="text-start m-0">Baked Cup Cake with fresh ingredients</p>
+                          <h4 className="text-start">Breakfast</h4>
+                          <p className="text-start m-0">A nourishing breakfast sets the tone for a productive day.</p>
                         </div>
-                        <h5 className="text-primary m-0">$5</h5>
                       </div>
                     </div>
                   </div>
                   <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
-                    <div className="d-flex rounded overflow-hidden">
-                      <img src="src/assets/img/menu-1.jpg" className="img-fluid" style={{ width: '100px' }} alt="Menu Item 1" />
-                      <div className="flex-fill d-flex align-items-center bg-white px-4">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/lunch.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
                         <div className="d-flex flex-column">
-                          <h5 className="text-start">Lunch</h5>
-                          <p className="text-start m-0">Baked Cup Cake with fresh ingredients</p>
+                          <h4 className="text-start">Lunch</h4>
+                          <p className="text-start m-0">A time to nourish not only the body but also the spirit.</p>
                         </div>
-                        <h5 className="text-primary m-0">$5</h5>
                       </div>
                     </div>
                   </div>
+                  
                   <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
-                    <div className="d-flex rounded overflow-hidden">
-                      <img src="src/assets/img/menu-1.jpg" className="img-fluid" style={{ width: '100px' }} alt="Menu Item 1" />
-                      <div className="flex-fill d-flex align-items-center bg-white px-4">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/dinner.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
                         <div className="d-flex flex-column">
-                          <h5 className="text-start">Dinner</h5>
-                          <p className="text-start m-0">Baked Cup Cake with fresh ingredients</p>
+                          <h4 className="text-start">Dinner</h4>
+                          <p className="text-start m-0">Feast your eyes on this delicious dinner spread.</p>
                         </div>
-                        <h5 className="text-primary m-0">$5</h5>
                       </div>
                     </div>
                   </div>
@@ -85,18 +83,86 @@ const Menu = () => {
             {activeTab === 'tab-7' && (
               <div id="tab-7" className="tab-pane fade show active p-0">
                 <div className="row g-4">
-                  <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
-                    <div className="d-flex rounded overflow-hidden">
-                      <img src="src/assets/img/menu-4.jpg" className="img-fluid" style={{ width: '100px' }} alt="Menu Item 4" />
-                      <div className="flex-fill d-flex align-items-center bg-white px-4">
+                  <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/breakfast.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3 ">
                         <div className="d-flex flex-column">
-                          <h5 className="text-start">Fried Rice</h5>
-                          <p className="text-start m-0">Delicious fried rice with veggies and chicken</p>
+                          <h4 className="text-start">Monday</h4>
+                          <p className="text-start m-0">A nourishing breakfast sets the tone for a productive day.</p>
                         </div>
-                        <h5 className="text-primary m-0">$6</h5>
                       </div>
                     </div>
                   </div>
+                  <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/lunch.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
+                        <div className="d-flex flex-column">
+                          <h4 className="text-start">Tuesday</h4>
+                          <p className="text-start m-0">A time to nourish not only the body but also the spirit.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/dinner.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
+                        <div className="d-flex flex-column">
+                          <h4 className="text-start">Wednesday</h4>
+                          <p className="text-start m-0">Feast your eyes on this delicious dinner spread.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/dinner.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
+                        <div className="d-flex flex-column">
+                          <h4 className="text-start">Thursday</h4>
+                          <p className="text-start m-0">Feast your eyes on this delicious dinner spread.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/dinner.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
+                        <div className="d-flex flex-column">
+                          <h4 className="text-start">Friday</h4>
+                          <p className="text-start m-0">Feast your eyes on this delicious dinner spread.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/dinner.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
+                        <div className="d-flex flex-column">
+                          <h4 className="text-start">Saturday</h4>
+                          <p className="text-start m-0">Feast your eyes on this delicious dinner spread.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+                    <div className=" rounded overflow-hidden bg-card">
+                      <img src="src/assets/img/dinner.jpg" className="img-fluid" style={{  width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
+                        <div className="d-flex flex-column">
+                          <h4 className="text-start">Sunday</h4>
+                          <p className="text-start m-0">Feast your eyes on this delicious dinner spread.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                
                 </div>
               </div>
             )}

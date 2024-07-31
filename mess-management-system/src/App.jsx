@@ -1,6 +1,8 @@
 import React from 'react';
 import 'animate.css/animate.min.css';
 import Menu from './components/menu';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   return (
@@ -156,6 +158,7 @@ const App = () => {
         </div>
         {/* About End */}
         <Menu />
+
         {/* JavaScript Libraries */}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

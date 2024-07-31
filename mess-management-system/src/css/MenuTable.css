@@ -1,0 +1,50 @@
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu-table th,
+  .menu-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .menu-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .menu-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .menu-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .menu-table th,
+  .menu-table td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu-table td {
+    position: relative;
+  }
+  
+  .menu-table td::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #4CAF50;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .menu-table td:hover::after {
+    width: 100%;
+  }
+  

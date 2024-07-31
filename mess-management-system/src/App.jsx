@@ -8,6 +8,9 @@ import Hero from './components/Hero';
 import About from './components/About';
 import MealBooking from './components/MealBooking';
 import Spinner from './components/Spinner';
+import Footer from './components/Footer';
+import Copyright from './components/Copyright';
+import BackToTop from './components/BackToTop';
 
 const App = () => {
   useEffect(() => {
@@ -117,8 +120,11 @@ const App = () => {
         <Navbar />
         <Hero />
         <About />
-        <Menu />
         <MealBooking />
+        <Menu />
+        <Footer />
+        <Copyright />
+        <BackToTop />
       </div>
     </>
   );

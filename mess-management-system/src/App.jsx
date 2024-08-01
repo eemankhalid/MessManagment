@@ -1,3 +1,4 @@
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import 'animate.css/animate.min.css';
@@ -11,6 +12,13 @@ import Spinner from './components/Spinner';
 import Footer from './components/Footer';
 import Copyright from './components/Copyright';
 import BackToTop from './components/BackToTop';
+
+
+
+const router= createBrowserRouter(
+  createRoutesFromElements(<Route index element={<h1>My App</h1>}/>)
+);
+
 
 const App = () => {
   useEffect(() => {

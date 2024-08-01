@@ -48,6 +48,7 @@ const Menu = () => {
         {/* Template Stylesheet */}
         <link href="src/css/style.css" rel="stylesheet" />
       </head>
+      <section id="menu-section">
       <div className="container-fluid menu bg-light py-6 my-6">
         <div className="container">
           <div className="text-center wow bounceInUp" data-wow-delay="0.1s">
@@ -429,7 +430,9 @@ const Menu = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
+    
   );
 };
 

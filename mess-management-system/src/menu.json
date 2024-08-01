@@ -1,0 +1,93 @@
+{
+    "Breakfast": {
+      "Monday": {
+        "image": "src/assets/img/Nashta.jfif",
+        "menu": "Fried Egg + Pratha"
+      },
+      "Tuesday": {
+        "image": "src/assets/img/Nashta.jfif",
+        "menu": "Naan Chana"
+      },
+      "Wednesday": {
+        "image": "src/assets/img/Nashta.jfif",
+        "menu": "Paratha + Omelete"
+      },
+      "Thursday": {
+        "image": "src/assets/img/Nashta.jfif",
+        "menu": "French Toast"
+      },
+      "Friday": {
+        "image": "src/assets/img/Nashta.jfif",
+        "menu": "Alu Anda"
+      },
+      "Saturday": {
+        "image": "src/assets/img/Nashta.jfif",
+        "menu": "Alu Paratha"
+      },
+      "Sunday": {
+        "image": "src/assets/img/Nashta.jfif",
+        "menu": "Halwa Puri Channa"
+      }
+    },
+    "Lunch": {
+      "Monday": {
+        "image": "src/assets/img/monday.jpg",
+        "menu": "Palak Alu"
+      },
+      "Tuesday": {
+        "image": "src/assets/img/monday.jpg",
+        "menu": "Kari Pakura + Roti"
+      },
+      "Wednesday": {
+        "image": "src/assets/img/monday.jpg",
+        "menu": "Daal Moong + Salad"
+      },
+      "Thursday": {
+        "image": "src/assets/img/monday.jpg",
+        "menu": "Kaddu Channy Ki Daal"
+      },
+      "Friday": {
+        "image": "src/assets/img/monday.jpg",
+        "menu": "Daal Chawal (Yellow)"
+      },
+      "Saturday": {
+        "image": "src/assets/img/monday.jpg",
+        "menu": "Bhindi"
+      },
+      "Sunday": {
+        "image": "src/assets/img/monday.jpg",
+        "menu": "Red Bean"
+      }
+    },
+    "Dinner": {
+      "Monday": {
+        "image": "src/assets/img/Biryani.jfif",
+        "menu": "Chicken Roast + Daal Channa + Chatni"
+      },
+      "Tuesday": {
+        "image": "src/assets/img/Biryani.jfif",
+        "menu": "Chicken Manchurian + Chinese Rice"
+      },
+      "Wednesday": {
+        "image": "src/assets/img/Biryani.jfif",
+        "menu": "Chicken Karahi + Kheer"
+      },
+      "Thursday": {
+        "image": "src/assets/img/Biryani.jfif",
+        "menu": "Biryani + Cold Drinks"
+      },
+      "Friday": {
+        "image": "src/assets/img/Biryani.jfif",
+        "menu": "Beef Kofta"
+      },
+      "Saturday": {
+        "image": "src/assets/img/Biryani.jfif",
+        "menu": "Chicken Pulao + Raita"
+      },
+      "Sunday": {
+        "image": "src/assets/img/Biryani.jfif",
+        "menu": "Aluu Cutlets + Mix Daal + Chatni"
+      }
+    }
+  }
+  

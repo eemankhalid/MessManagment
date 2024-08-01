@@ -32,63 +32,33 @@ const router= createBrowserRouter(
 const App = () => {
   useEffect(() => {
     // Load external JS libraries
-    const script1 = document.createElement("script");
-    script1.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js";
-    script1.async = true;
-    document.body.appendChild(script1);
+    const scripts = [
+      { src: "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", id: "jquery" },
+      { src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js", id: "bootstrap" },
+      { src: "src/lib/wow/wow.min.js", id: "wow" },
+      { src: "src/lib/easing/easing.min.js", id: "easing" },
+      { src: "src/lib/waypoints/waypoints.min.js", id: "waypoints" },
+      { src: "src/lib/counterup/counterup.min.js", id: "counterup" },
+      { src: "src/lib/lightbox/js/lightbox.min.js", id: "lightbox" },
+      { src: "src/lib/owlcarousel/owl.carousel.min.js", id: "owlcarousel" },
+      { src: "src/js/main.js", id: "main" },
+    ];
 
-    const script2 = document.createElement("script");
-    script2.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js";
-    script2.async = true;
-    document.body.appendChild(script2);
+    scripts.forEach(script => {
+      const scriptElement = document.createElement("script");
+      scriptElement.src = script.src;
+      scriptElement.id = script.id;
+      scriptElement.async = true;
+      document.body.appendChild(scriptElement);
+    });
 
-    const script3 = document.createElement("script");
-    script3.src = "src/lib/wow/wow.min.js";
-    script3.async = true;
-    document.body.appendChild(script3);
-
-    const script4 = document.createElement("script");
-    script4.src = "src/lib/easing/easing.min.js";
-    script4.async = true;
-    document.body.appendChild(script4);
-
-    const script5 = document.createElement("script");
-    script5.src = "src/lib/waypoints/waypoints.min.js";
-    script5.async = true;
-    document.body.appendChild(script5);
-
-    const script6 = document.createElement("script");
-    script6.src = "src/lib/counterup/counterup.min.js";
-    script6.async = true;
-    document.body.appendChild(script6);
-
-    const script7 = document.createElement("script");
-    script7.src = "src/lib/lightbox/js/lightbox.min.js";
-    script7.async = true;
-    document.body.appendChild(script7);
-
-    const script8 = document.createElement("script");
-    script8.src = "src/lib/owlcarousel/owl.carousel.min.js";
-    script8.async = true;
-    document.body.appendChild(script8);
-
-    // Load your main.js
-    const scriptMain = document.createElement("script");
-    scriptMain.src = "src/js/main.js";
-    scriptMain.async = true;
-    document.body.appendChild(scriptMain);
 
     return () => {
       // Cleanup scripts when the component unmounts
-      document.body.removeChild(script1);
-      document.body.removeChild(script2);
-      document.body.removeChild(script3);
-      document.body.removeChild(script4);
-      document.body.removeChild(script5);
-      document.body.removeChild(script6);
-      document.body.removeChild(script7);
-      document.body.removeChild(script8);
-      document.body.removeChild(scriptMain);
+      scripts.forEach(script => {
+        const scriptElement = document.getElementById(script.id);
+        if (scriptElement) document.body.removeChild(scriptElement);
+      });
     }
   }, []);
 

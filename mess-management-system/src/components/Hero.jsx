@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hero = () => {
+const Hero = ({welcome,text,image}) => {
   return (
     <div>
       {/* Hero Start */}
@@ -9,10 +9,10 @@ const Hero = () => {
             <div className="row g-5 align-items-center">
               <div className="col-lg-7 col-md-12">
                 <small className="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">
-                  Welcome to eHungry
+                 {welcome}
                 </small>
                 <h1 className="display-1 mb-4 animated bounceInDown">
-                  Your Mess with <span className="text-primary">e</span>Hungry, Delight in Every Meal
+                  {text}
                 </h1>
                 <a href="" className="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">
                   Check Menu
@@ -22,7 +22,7 @@ const Hero = () => {
                 </a>
               </div>
               <div className="col-lg-5 col-md-12">
-                <img src="src/assets/img/hero.png" className="img-fluid rounded animated zoomIn" alt="Hero Image" />
+                <img src={image} className="img-fluid rounded animated zoomIn" alt="Hero Image" />
               </div>
             </div>
           </div>

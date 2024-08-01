@@ -10,6 +10,7 @@ import BackToTop from '../components/BackToTop';
 const MainLayout = () => {
     return (
         <>
+            <Spinner/>
             <Navbar />
             <BackToTop />
             <Outlet />

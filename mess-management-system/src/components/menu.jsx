@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
+
 const Menu = () => {
   const [activeTab, setActiveTab] = useState('tab-6');
 
@@ -84,7 +85,7 @@ const Menu = () => {
                   <div className="row g-4">
                     <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                       <div className=" rounded overflow-hidden bg-card">
-                        <img src="src/assets/img/breakfast.jpg" className="img-fluid" style={{ width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                        <a href='/menu#menu-section'><img src="src/assets/img/breakfast.jpg" className="img-fluid" style={{ width: '100%', height: 'auto' }} alt="Menu Item 1" /></a>
                         <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3 ">
                           <div className="d-flex flex-column">
                             <h4 className="text-start">Breakfast</h4>
@@ -95,7 +96,7 @@ const Menu = () => {
                     </div>
                     <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                       <div className=" rounded overflow-hidden bg-card">
-                        <img src="src/assets/img/lunch.jpg" className="img-fluid" style={{ width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <a href='/menu#menu-section'><img src="src/assets/img/lunch.jpg" className="img-fluid" style={{ width: '100%', height: 'auto' }} alt="Menu Item 1" /></a>
                         <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
                           <div className="d-flex flex-column">
                             <h4 className="text-start">Lunch</h4>
@@ -107,7 +108,7 @@ const Menu = () => {
 
                     <div className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                       <div className=" rounded overflow-hidden bg-card">
-                        <img src="src/assets/img/dinner.jpg" className="img-fluid" style={{ width: '100%', height: 'auto' }} alt="Menu Item 1" />
+                      <a href='/menu#menu-section'><img src="src/assets/img/dinner.jpg" className="img-fluid" style={{ width: '100%', height: 'auto' }} alt="Menu Item 1" /></a>
                         <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
                           <div className="d-flex flex-column">
                             <h4 className="text-start">Dinner</h4>

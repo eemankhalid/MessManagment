@@ -1,6 +1,11 @@
 // MenuPage.jsx
 import React from 'react';
 import Hero from '../components/Hero';
+import TableMenu from '../components/TableMenu';
+
+
+
+
 
 const MenuPage = () => {
   const buttons = [
@@ -15,6 +20,7 @@ const MenuPage = () => {
         image="src/assets/img/menuPage.jpg"
         buttons={buttons}
       />
+      <TableMenu />
     </div>
   );
 }

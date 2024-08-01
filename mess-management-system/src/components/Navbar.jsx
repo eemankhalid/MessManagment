@@ -22,19 +22,19 @@ const Navbar = () => {
               </button>
               <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav mx-auto">
-                  <a href="index.html" className="nav-item nav-link active">
+                  <a href="/" className="nav-item nav-link active">
                     Home
                   </a>
-                  <a href="about.html" className="nav-item nav-link">
+                  <a href="/menu" className="nav-item nav-link">
                     Menu
                   </a>
-                  <a href="service.html" className="nav-item nav-link">
+                  <a href="/meal-booking" className="nav-item nav-link">
                     Meal Booking
                   </a>
-                  <a href="contact.html" className="nav-item nav-link">
+                  <a href="/contact" className="nav-item nav-link">
                     Contact
                   </a>
-                  <a href="menu.html" className="nav-item nav-link">
+                  <a href="/admin" className="nav-item nav-link">
                     Admin
                   </a>
                 </div>

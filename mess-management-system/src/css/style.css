@@ -18,7 +18,7 @@
 .back-to-top {
     position: fixed;
     right: 30px;
-    bottom: 30px;
+    bottom: 26px;
     z-index: 99;
 }
 
@@ -189,6 +189,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     opacity: 1;
 }
 /*** Events End ***/
+
 
 
 /*** service start ***/
@@ -478,9 +479,44 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 
 /*** Footer Start ***/
-.footer .footer-item a.text-body:hover {
+.footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.footer .footer-item h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer .footer-item a.text-light {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .footer-item a.text-light:hover {
     color: var(--bs-primary) !important;
 }
+
+.footer .footer-icon .btn {
+    background-color: transparent;
+    border: 1px solid #f8f9fa;
+    color: #f8f9fa;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer .footer-icon .btn:hover {
+    background-color: var(--bs-primary);
+    color: #fff;
+}
+
+
 
 
 /*** Footer End ***/

@@ -3,20 +3,29 @@ import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import 'animate.css/animate.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Menu from './components/menu';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import MealBooking from './components/MealBooking';
-import Spinner from './components/Spinner';
-import Footer from './components/Footer';
-import Copyright from './components/Copyright';
-import BackToTop from './components/BackToTop';
+
+
+import MainLayout from './Layouts/MainLayout';
+import HomePage from './Pages/HomePage';
+import MenuPage from './Pages/MenuPage';
+import MealBooking from './Pages/MealBooking';
+import ContactPage from './Pages/ContactPage';
+
 
 
 
 const router= createBrowserRouter(
-  createRoutesFromElements(<Route index element={<h1>My App</h1>}/>)
+  createRoutesFromElements(
+    <Route path='/' element={<MainLayout/>}>
+      <Route index element={<HomePage/>}/>
+      <Route path='/menu' element={<MenuPage/>}/>
+      <Route path='/meal-booking' element={<MealBooking />}/>
+      <Route path='/contact' element={<ContactPage />}/>
+
+
+    </Route>
+
+  )
 );
 
 
@@ -122,18 +131,11 @@ const App = () => {
         <link href="src/css/style.css" rel="stylesheet" />
       </Helmet>
 
-      <div>
+      <>
        
-        <Spinner />
-        <Navbar />
-        <Hero />
-        <About />
-        <MealBooking />
-        <Menu />
-        <Footer />
-        <Copyright />
-        <BackToTop />
-      </div>
+        <RouterProvider router={router}/>
+        
+      </>
     </>
   );
 };

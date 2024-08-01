@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       {/* About Start */}
-      <section className='about'>
+      <section className='about' id='about-section'>
       <div className="container-fluid py-6">
           <div className="container">
             <div className="row g-5 align-items-center">

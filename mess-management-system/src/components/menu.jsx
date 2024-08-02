@@ -17,10 +17,10 @@ const Menu = () => {
       try {
         const todayRes = await fetch('http://localhost:8000/today');
         const todayData = await todayRes.json();
-        
+
         const thisWeekRes = await fetch('http://localhost:8000/thisWeek');
         const thisWeekData = await thisWeekRes.json();
-        
+
         setMenu({ today: todayData, thisWeek: thisWeekData });
       } catch (error) {
         console.log('Error Fetching Data', error);
@@ -70,9 +70,11 @@ const Menu = () => {
                     <div className="row g-4">
                       {menu.today.map((item, index) => (
                         <div key={index} className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
-                          <div className="rounded overflow-hidden bg-card">
-                            <a href='/menu#menu-section'><img src={item.image} className="img-fluid" style={{ width: '100%', height: 'auto' }} alt={item.title} /></a>
-                            <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3 ">
+                          <div className="card rounded overflow-hidden bg-card" style={{ height: '400px' }}>
+                            <a href='/menu#menu-section'>
+                              <img src={item.image} className="img-fluid" style={{ width: '100%', height: '200px', objectFit: 'cover' }} alt={item.title} />
+                            </a>
+                            <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3" style={{ height: '150px', overflow: 'auto' }}>
                               <div className="d-flex flex-column">
                                 <h4 className="text-start">{item.title}</h4>
                                 <p className="text-start m-0">{item.description}</p>
@@ -86,36 +88,38 @@ const Menu = () => {
                 )}
                 {activeTab === 'tab-7' && (
                   <div id="tab-7" className="tab-pane fade show active p-0">
-                    {['breakfast', 'lunch', 'dinner'].map((mealType, index) => (
-                      <div key={index} className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
-                        <h3 className="text-start align-items-center" style={{ textAlign: 'center' }}>{mealType.charAt(0).toUpperCase() + mealType.slice(1)}</h3>
-                        <div id={`${mealType}Carousel`} className="carousel slide" data-bs-ride="carousel">
-                          <div className="carousel-inner">
-                            {menu.thisWeek[mealType].map((item, idx) => (
-                              <div key={idx} className={`carousel-item ${idx === 0 ? 'active' : ''}`}>
-                                <div className="rounded overflow-hidden bg-card">
-                                  <img src={item.image} className="img-fluid" style={{ width: '100%', height: 'auto' }} alt={`${item.day} Menu`} />
-                                  <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3">
-                                    <div className="d-flex flex-column">
-                                      <h4 className="text-start">{item.day}</h4>
-                                      <p className="text-start m-0">{item.item}</p>
+                    <div className="row g-4">
+                      {['breakfast', 'lunch', 'dinner'].map((mealType, index) => (
+                        <div key={index} className="col-lg-4">
+                          <h3 className="text-center mb-4">{mealType.charAt(0).toUpperCase() + mealType.slice(1)}</h3>
+                          <div id={`${mealType}Carousel`} className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-inner">
+                              {menu.thisWeek[mealType].map((item, idx) => (
+                                <div key={idx} className={`carousel-item ${idx === 0 ? 'active' : ''}`}>
+                                  <div className="card rounded overflow-hidden bg-card" style={{ height: '400px' }}>
+                                    <img src={item.image} className="img-fluid" style={{ width: '100%', height: '200px', objectFit: 'cover' }} alt={`${item.day} Menu`} />
+                                    <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3" style={{ height: '150px', overflow: 'auto' }}>
+                                      <div className="d-flex flex-column">
+                                        <h4 className="text-start">{item.day}</h4>
+                                        <p className="text-start m-0">{item.item}</p>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                            ))}
+                              ))}
+                            </div>
+                            <button className="carousel-control-prev" type="button" data-bs-target={`#${mealType}Carousel`} data-bs-slide="prev">
+                              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="carousel-control-next" type="button" data-bs-target={`#${mealType}Carousel`} data-bs-slide="next">
+                              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span className="visually-hidden">Next</span>
+                            </button>
                           </div>
-                          <button className="carousel-control-prev" type="button" data-bs-target={`#${mealType}Carousel`} data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                          </button>
-                          <button className="carousel-control-next" type="button" data-bs-target={`#${mealType}Carousel`} data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                          </button>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>

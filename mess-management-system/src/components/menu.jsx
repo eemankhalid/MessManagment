@@ -15,6 +15,7 @@ const Menu = () => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
+
         const todayRes = await fetch('http://localhost:8000/today');
         const todayData = await todayRes.json();
         

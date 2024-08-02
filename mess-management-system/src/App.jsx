@@ -14,6 +14,7 @@ import ContactPage from './Pages/ContactPage';
 
 
 
+
 const router= createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainLayout/>}>
@@ -21,6 +22,7 @@ const router= createBrowserRouter(
       <Route path='/menu' element={<MenuPage/>}/>
       <Route path='/meal-booking' element={<MealBooking />}/>
       <Route path='/contact' element={<ContactPage />}/>
+      
 
 
     </Route>

@@ -15,9 +15,14 @@ const Menu = () => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const res = await fetch('http://localhost:8000/menu'); // Adjust the path to your JSON file
-        const data = await res.json();
-        setMenu(data);
+
+        const todayRes = await fetch('http://localhost:8000/today');
+        const todayData = await todayRes.json();
+        
+        const thisWeekRes = await fetch('http://localhost:8000/thisWeek');
+        const thisWeekData = await thisWeekRes.json();
+        
+        setMenu({ today: todayData, thisWeek: thisWeekData });
       } catch (error) {
         console.log('Error Fetching Data', error);
       } finally {

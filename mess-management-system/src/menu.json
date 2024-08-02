@@ -1,93 +1,132 @@
 {
-    "Breakfast": {
-      "Monday": {
-        "image": "src/assets/img/Nashta.jfif",
-        "menu": "Fried Egg + Pratha"
-      },
-      "Tuesday": {
-        "image": "src/assets/img/Nashta.jfif",
-        "menu": "Naan Chana"
-      },
-      "Wednesday": {
-        "image": "src/assets/img/Nashta.jfif",
-        "menu": "Paratha + Omelete"
-      },
-      "Thursday": {
-        "image": "src/assets/img/Nashta.jfif",
-        "menu": "French Toast"
-      },
-      "Friday": {
-        "image": "src/assets/img/Nashta.jfif",
-        "menu": "Alu Anda"
-      },
-      "Saturday": {
-        "image": "src/assets/img/Nashta.jfif",
-        "menu": "Alu Paratha"
-      },
-      "Sunday": {
-        "image": "src/assets/img/Nashta.jfif",
-        "menu": "Halwa Puri Channa"
-      }
+  "today": [
+    {
+      "title": "Breakfast",
+      "description": "A nourishing breakfast sets the tone for a productive day.",
+      "image": "src/assets/img/breakfast.jpg"
     },
-    "Lunch": {
-      "Monday": {
-        "image": "src/assets/img/monday.jpg",
-        "menu": "Palak Alu"
-      },
-      "Tuesday": {
-        "image": "src/assets/img/monday.jpg",
-        "menu": "Kari Pakura + Roti"
-      },
-      "Wednesday": {
-        "image": "src/assets/img/monday.jpg",
-        "menu": "Daal Moong + Salad"
-      },
-      "Thursday": {
-        "image": "src/assets/img/monday.jpg",
-        "menu": "Kaddu Channy Ki Daal"
-      },
-      "Friday": {
-        "image": "src/assets/img/monday.jpg",
-        "menu": "Daal Chawal (Yellow)"
-      },
-      "Saturday": {
-        "image": "src/assets/img/monday.jpg",
-        "menu": "Bhindi"
-      },
-      "Sunday": {
-        "image": "src/assets/img/monday.jpg",
-        "menu": "Red Bean"
-      }
+    {
+      "title": "Lunch",
+      "description": "A time to nourish not only the body but also the spirit.",
+      "image": "src/assets/img/lunch.jpg"
     },
-    "Dinner": {
-      "Monday": {
-        "image": "src/assets/img/Biryani.jfif",
-        "menu": "Chicken Roast + Daal Channa + Chatni"
-      },
-      "Tuesday": {
-        "image": "src/assets/img/Biryani.jfif",
-        "menu": "Chicken Manchurian + Chinese Rice"
-      },
-      "Wednesday": {
-        "image": "src/assets/img/Biryani.jfif",
-        "menu": "Chicken Karahi + Kheer"
-      },
-      "Thursday": {
-        "image": "src/assets/img/Biryani.jfif",
-        "menu": "Biryani + Cold Drinks"
-      },
-      "Friday": {
-        "image": "src/assets/img/Biryani.jfif",
-        "menu": "Beef Kofta"
-      },
-      "Saturday": {
-        "image": "src/assets/img/Biryani.jfif",
-        "menu": "Chicken Pulao + Raita"
-      },
-      "Sunday": {
-        "image": "src/assets/img/Biryani.jfif",
-        "menu": "Aluu Cutlets + Mix Daal + Chatni"
-      }
+    {
+      "title": "Dinner",
+      "description": "Feast your eyes on this delicious dinner spread.",
+      "image": "src/assets/img/dinner.jpg"
     }
+  ],
+  "thisWeek": {
+    "breakfast": [
+      {
+        "day": "Monday",
+        "item": "Fried Egg + Pratha",
+        "image": "src/assets/img/Nashta.jfif"
+      },
+      {
+        "day": "Tuesday",
+        "item": "Naan Chana",
+        "image": "src/assets/img/Nashta.jfif"
+      },
+      {
+        "day": "Wednesday",
+        "item": "Paratha + Omelete",
+        "image": "src/assets/img/Nashta.jfif"
+      },
+      {
+        "day": "Thursday",
+        "item": "French Toast",
+        "image": "src/assets/img/Nashta.jfif"
+      },
+      {
+        "day": "Friday",
+        "item": "Alu Anda",
+        "image": "src/assets/img/Nashta.jfif"
+      },
+      {
+        "day": "Saturday",
+        "item": "Alu Paratha",
+        "image": "src/assets/img/Nashta.jfif"
+      },
+      {
+        "day": "Sunday",
+        "item": "Halwa Puri Channa",
+        "image": "src/assets/img/Nashta.jfif"
+      }
+    ],
+    "lunch": [
+      {
+        "day": "Monday",
+        "item": "Palak Alu",
+        "image": "src/assets/img/monday.jpg"
+      },
+      {
+        "day": "Tuesday",
+        "item": "Kari Pakura + Roti",
+        "image": "src/assets/img/monday.jpg"
+      },
+      {
+        "day": "Wednesday",
+        "item": "Daal Moong + Salad",
+        "image": "src/assets/img/monday.jpg"
+      },
+      {
+        "day": "Thursday",
+        "item": "Kaddu Channy Ki Daal",
+        "image": "src/assets/img/monday.jpg"
+      },
+      {
+        "day": "Friday",
+        "item": "Daal Chawal (Yellow)",
+        "image": "src/assets/img/monday.jpg"
+      },
+      {
+        "day": "Saturday",
+        "item": "Bhindi",
+        "image": "src/assets/img/monday.jpg"
+      },
+      {
+        "day": "Sunday",
+        "item": "Red Bean",
+        "image": "src/assets/img/monday.jpg"
+      }
+    ],
+    "dinner": [
+      {
+        "day": "Monday",
+        "item": "Chicken Roast + Daal Channa + Chatni",
+        "image": "src/assets/img/Biryani.jfif"
+      },
+      {
+        "day": "Tuesday",
+        "item": "Chicken Manchurian + Chinese Rice",
+        "image": "src/assets/img/Biryani.jfif"
+      },
+      {
+        "day": "Wednesday",
+        "item": "Chicken Karahi + Kheer",
+        "image": "src/assets/img/Biryani.jfif"
+      },
+      {
+        "day": "Thursday",
+        "item": "Biryani + Cold Drinks",
+        "image": "src/assets/img/Biryani.jfif"
+      },
+      {
+        "day": "Friday",
+        "item": "Beef Kofta",
+        "image": "src/assets/img/Biryani.jfif"
+      },
+      {
+        "day": "Saturday",
+        "item": "Chicken Pulao + Raita",
+        "image": "src/assets/img/Biryani.jfif"
+      },
+      {
+        "day": "Sunday",
+        "item": "Aluu Cutlets + Mix Daal + Chatni",
+        "image": "src/assets/img/Biryani.jfif"
+      }
+    ]
   }
-  
+}

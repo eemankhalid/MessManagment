@@ -128,5 +128,130 @@
         "image": "src/assets/img/Biryani.jfif"
       }
     ]
+  },
+  "menu": {
+    "ChineseCuisine": [
+      {
+        "name": "Spring Rolls",
+        "description": "Crispy rolls filled with a mix of vegetables and served with a sweet and sour dipping sauce.",
+        "price": 6.99
+      },
+      {
+        "name": "Sweet and Sour Chicken",
+        "description": "Chicken pieces cooked in a tangy and sweet sauce with bell peppers and pineapples.",
+        "price": 12.99
+      },
+      {
+        "name": "Kung Pao Shrimp",
+        "description": "Stir-fried shrimp with peanuts, vegetables, and chili peppers in a spicy sauce.",
+        "price": 14.99
+      },
+      {
+        "name": "Fried Rice",
+        "description": "Stir-fried rice with vegetables, eggs, and your choice of chicken, beef, or shrimp.",
+        "price": 9.99
+      },
+      {
+        "name": "Chicken Manchurian",
+        "description": "Chicken pieces cooked in a tangy, spicy sauce with vegetables.",
+        "price": 13.99
+      },
+      {
+        "name": "Chinese Rice",
+        "description": "Stir-fried rice with vegetables and a hint of soy sauce.",
+        "price": 10.99
+      }
+    ],
+    "DesiCuisine": [
+      {
+        "name": "Chicken Biryani",
+        "description": "Fragrant rice dish with chicken, spices, and saffron.",
+        "price": 13.99
+      },
+      {
+        "name": "Paneer Butter Masala",
+        "description": "Cottage cheese cooked in a creamy tomato-based sauce with butter and spices.",
+        "price": 11.99
+      },
+      {
+        "name": "Rogan Josh",
+        "description": "Tender lamb cooked in a rich, spicy gravy.",
+        "price": 15.99
+      },
+      {
+        "name": "Naan",
+        "description": "Soft and fluffy Indian bread, perfect for scooping up curries.",
+        "price": 2.99
+      },
+      {
+        "name": "Palak Alu",
+        "description": "Spinach and potatoes cooked with spices.",
+        "price": 11.99
+      },
+      {
+        "name": "Chicken Karahi",
+        "description": "Spicy chicken curry cooked in a wok-like pan with tomatoes and green chilies.",
+        "price": 14.99
+      },
+      {
+        "name": "Beef Kofta",
+        "description": "Spiced beef meatballs in a rich tomato sauce.",
+        "price": 13.99
+      },
+      {
+        "name": "Alu Paratha",
+        "description": "Flatbread stuffed with spiced mashed potatoes.",
+        "price": 4.99
+      }
+    ],
+    "Desserts": [
+      {
+        "name": "Gulab Jamun",
+        "description": "Deep-fried dough balls soaked in a sweet syrup flavored with rose water and cardamom.",
+        "price": 4.99
+      },
+      {
+        "name": "Mango Sticky Rice",
+        "description": "Sweet sticky rice served with ripe mango and a drizzle of coconut milk.",
+        "price": 5.99
+      },
+      {
+        "name": "Chocolate Lava Cake",
+        "description": "Rich chocolate cake with a gooey molten center, served with vanilla ice cream.",
+        "price": 6.99
+      },
+      {
+        "name": "Tiramisu",
+        "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+        "price": 7.99
+      },
+      {
+        "name": "Kheer",
+        "description": "Creamy rice pudding flavored with cardamom and topped with nuts.",
+        "price": 5.49
+      }
+    ],
+    "Juices": [
+      {
+        "name": "Mango Juice",
+        "description": "Refreshing juice made from ripe mangoes.",
+        "price": 3.99
+      },
+      {
+        "name": "Orange Juice",
+        "description": "Freshly squeezed juice from oranges.",
+        "price": 3.49
+      },
+      {
+        "name": "Pineapple Juice",
+        "description": "Sweet and tangy juice made from fresh pineapples.",
+        "price": 4.49
+      },
+      {
+        "name": "Mixed Berry Juice",
+        "description": "A blend of strawberries, blueberries, and raspberries in a refreshing juice.",
+        "price": 4.99
+      }
+    ]
   }
 }

@@ -107,7 +107,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     text-align: center;
     font-weight: 600;
     font-size: 17px;
-    transition: .5s;
+    transition: color .5s;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -120,7 +120,6 @@ h4, h5, h6, .h4, .h5, .h6 {
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
-    vertical-align: middle;
     margin-left: 8px;
 }
 
@@ -131,7 +130,7 @@ h4, h5, h6, .h4, .h5, .h6 {
         top: 100%;
         transform: rotateX(-75deg);
         transform-origin: 0% 0%;
-        transition: .5s;
+        transition: transform .5s, opacity .5s;
         opacity: 0;
     }
     
@@ -151,6 +150,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     background-color: rgba(255, 255, 255, .95);
 }
 /*** Navbar End ***/
+
 
 /*** Menu ***/
 

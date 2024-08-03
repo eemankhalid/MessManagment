@@ -1,17 +1,20 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <div>
       {/* Navbar start */}
       <div className="container-fluid nav-bar">
           <div className="container">
             <nav className="navbar navbar-light navbar-expand-lg py-4">
-              <a href="index.html" className="navbar-brand">
+              <Link to="/" className="navbar-brand">
                 <h1 className="text-primary fw-bold mb-0">
                   e<span className="text-dark">Hungry</span>
                 </h1>
-              </a>
+              </Link>
               <button
                 className="navbar-toggler py-2 px-3"
                 type="button"
@@ -22,28 +25,28 @@ const Navbar = () => {
               </button>
               <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav mx-auto">
-                  <a href="/" className="nav-item nav-link active">
+                  <Link to="/" className={`nav-item nav-link ${location.pathname === '/' ? 'active' : ''}`}>
                     Home
-                  </a>
-                  <a href="/menu" className="nav-item nav-link">
+                  </Link>
+                  <Link to="/menu" className={`nav-item nav-link ${location.pathname === '/menu' ? 'active' : ''}`}>
                     Menu
-                  </a>
-                  <a href="/meal-booking" className="nav-item nav-link">
+                  </Link>
+                  <Link to="/meal-booking" className={`nav-item nav-link ${location.pathname === '/meal-booking' ? 'active' : ''}`}>
                     Meal Booking
-                  </a>
-                  <a href="/contact" className="nav-item nav-link">
+                  </Link>
+                  <Link to="/contact" className={`nav-item nav-link ${location.pathname === '/contact' ? 'active' : ''}`}>
                     Contact
-                  </a>
-                  <a href="/admin" className="nav-item nav-link">
+                  </Link>
+                  <Link to="/admin" className={`nav-item nav-link ${location.pathname === '/admin' ? 'active' : ''}`}>
                     Admin
-                  </a>
+                  </Link>
                 </div>
-                <a
-                  href=""
+                <Link
+                  to="/menu"
                   className="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill"
                 >
                   Check Menu
-                </a>
+                </Link>
               </div>
             </nav>
           </div>

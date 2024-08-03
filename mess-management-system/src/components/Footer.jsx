@@ -53,7 +53,7 @@ const Footer = () => {
                                 <h4 className="mb-4">Contact Us</h4>
                                 <div className="d-flex flex-column align-items-start">
                                     <p><i className="fa fa-map-marker-alt text-primary me-2"></i>Street 12, G-14, Islamabad</p>
-                                    <p><i className="fa fa-phone-alt text-primary me-2"></i> (+92) 3456 7890 123</p>
+                                    <p><i className="fa fa-phone-alt text-primary me-2"></i>(+92) 311 877 1467</p>
                                     <p><i className="fas fa-envelope text-primary me-2"></i> eHungry@gmail.com</p>
                                     <p><i className="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</p>
                                 </div>

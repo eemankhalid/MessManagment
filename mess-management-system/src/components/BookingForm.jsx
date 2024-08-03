@@ -4,6 +4,7 @@ const BookingForm = () => {
   const [menu, setMenu] = useState({});
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedItem, setSelectedItem] = useState('');
+  const [price, setPrice] = useState('');
   const [description, setDescription] = useState('');
 
   useEffect(() => {
@@ -16,6 +17,7 @@ const BookingForm = () => {
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
     setSelectedItem('');
+    setPrice('');
     setDescription('');
   };
 
@@ -23,6 +25,7 @@ const BookingForm = () => {
     const item = e.target.value;
     setSelectedItem(item);
     const itemDetails = menu[selectedCategory]?.find(i => i.name === item);
+    setPrice(itemDetails?.price || '');
     setDescription(itemDetails?.description || '');
   };
 
@@ -43,9 +46,9 @@ const BookingForm = () => {
               <div className="border-bottom border-top border-primary bg-light py-5 px-4">
                 <div className="text-center">
                   <small className="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">
-                    Book Us
+                    Book Order
                   </small>
-                  <h1 className="display-5 mb-5">Where you want Our Services</h1>
+                  <h1 className="display-5 mb-5">Order Your Favourite Meal</h1>
                 </div>
                 <div className="row g-4 form">
                   <div className="col-lg-4 col-md-6">
@@ -89,19 +92,28 @@ const BookingForm = () => {
                     <input
                       type="text"
                       className="form-control border-primary p-2"
-                      placeholder="Food Description"
-                      value={description}
+                      placeholder="Price"
+                      value={price}
                       readOnly
                     />
                   </div>
-                  <div className="col-lg-6 col-md-12">
+                  <div className="col-lg-4 col-md-12">
+                    <textarea
+                      className="form-control border-primary p-2"
+                      placeholder="Description"
+                      rows="3"
+                      value={description}
+                      readOnly
+                    ></textarea>
+                  </div>
+                  <div className="col-lg-4 col-md-12">
                     <textarea
                       className="form-control border-primary p-2"
                       placeholder="Address"
                       rows="3"
                     ></textarea>
                   </div>
-                  <div className="col-lg-6 col-md-12">
+                  <div className="col-lg-4 col-md-12">
                     <textarea
                       className="form-control border-primary p-2"
                       placeholder="Dietary Restrictions"
@@ -110,7 +122,7 @@ const BookingForm = () => {
                   </div>
                   <div className="col-12 text-center">
                     <button type="submit" className="btn btn-primary px-5 py-3 rounded-pill">
-                      Book Now
+                      Order Now
                     </button>
                   </div>
                 </div>

@@ -10,6 +10,7 @@ import HomePage from './Pages/HomePage';
 import MenuPage from './Pages/MenuPage';
 import MealBooking from './Pages/MealBooking';
 import ContactPage from './Pages/ContactPage';
+import AdminPage from './Pages/AdminPage';
 
 
 
@@ -22,6 +23,7 @@ const router= createBrowserRouter(
       <Route path='/menu' element={<MenuPage/>}/>
       <Route path='/meal-booking' element={<MealBooking />}/>
       <Route path='/contact' element={<ContactPage />}/>
+      <Route path='/admin' element={<AdminPage />}/>
       
 
 
@@ -37,6 +39,7 @@ const App = () => {
     const scripts = [
       { src: "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", id: "jquery" },
       { src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js", id: "bootstrap" },
+      { src: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css", id: "bootstrap" }, 
       { src: "src/lib/wow/wow.min.js", id: "wow" },
       { src: "src/lib/easing/easing.min.js", id: "easing" },
       { src: "src/lib/waypoints/waypoints.min.js", id: "waypoints" },

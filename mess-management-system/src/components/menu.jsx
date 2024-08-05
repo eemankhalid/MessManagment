@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -72,9 +73,9 @@ const Menu = () => {
                       {menu.today.map((item, index) => (
                         <div key={index} className="col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                           <div className="card rounded overflow-hidden bg-card" style={{ height: '400px' }}>
-                            <a href='/menu#menu-section'>
+                            <Link to='/menu'>
                               <img src={item.image} className="img-fluid" style={{ width: '100%', height: '200px', objectFit: 'cover' }} alt={item.title} />
-                            </a>
+                            </Link>
                             <div className="flex-fill d-flex align-items-center bg-white px-4 mt-3" style={{ height: '150px', overflow: 'auto' }}>
                               <div className="d-flex flex-column">
                                 <h4 className="text-start">{item.title}</h4>

@@ -134,7 +134,7 @@
       {
         "name": "Spring Rolls",
         "description": "Crispy rolls filled with a mix of vegetables and chicken, served with a side of chutney. Enjoy three delicious rolls in each serving.",
-        "price": "Rs. 100" 
+        "price": "Rs. 100"
       },
       {
         "name": "Fried Rice",
@@ -199,7 +199,7 @@
         "name": "Ras Malai",
         "description": " serving bowl of delicate ras malai with soft, spongy cheese dumplings soaked in a creamy, flavored milk syrup.",
         "price": "Rs. 260"
-      },      
+      },
       {
         "name": "Kheer",
         "description": "serving bowl creamy rice pudding flavored with cardamom and topped with nuts.",
@@ -210,7 +210,6 @@
         "description": "serving bowl of rich and creamy vermicelli pudding flavored with cardamom, saffron, and garnished with nuts and dried fruits.",
         "price": "Rs. 200"
       }
-      
     ],
     "Juices": [
       {
@@ -238,8 +237,6 @@
         "description": "Indulgent shake made with crushed Oreo cookies blended into a creamy, delicious mix.",
         "price": "Rs. 150"
       }
-      
-      
     ]
   }
 }

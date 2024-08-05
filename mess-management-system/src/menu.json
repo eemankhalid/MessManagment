@@ -150,6 +150,11 @@
         "name": "Chinese Rice",
         "description": "Stir-fried rice with vegetables and a hint of soy sauce.",
         "price": "Rs. 300"
+      },
+      {
+        "name": "Beef and Broccoli",
+        "description": "Tender beef slices stir-fried with crisp broccoli in a savory garlic sauce.",
+        "price": "Rs. 250"
       }
     ],
     "DesiCuisine": [
@@ -222,7 +227,19 @@
         "name": "Banana Shake",
         "description": "Creamy and refreshing shake made with ripe bananas blended to perfection.",
         "price": "Rs. 150"
+      },
+      {
+        "name": "Strawberry Shake",
+        "description": "Deliciously creamy shake made with fresh strawberries blended to perfection.",
+        "price": "Rs. 170"
+      },
+      {
+        "name": "Oreo Shake",
+        "description": "Indulgent shake made with crushed Oreo cookies blended into a creamy, delicious mix.",
+        "price": "Rs. 150"
       }
+      
+      
     ]
   }
 }

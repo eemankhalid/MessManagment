@@ -18,7 +18,7 @@ const BookingForm = () => {
 
   useEffect(() => {
     // Fetch the menu data from the local JSON file or API
-    fetch('http://localhost:8000/menu')
+    fetch('http://localhost:5000/menu')
       .then(response => response.json())
       .then(data => setMenu(data));
   }, []);

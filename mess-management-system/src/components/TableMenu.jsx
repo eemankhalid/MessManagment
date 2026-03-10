@@ -8,11 +8,11 @@ const TableMenu = () => {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const thisWeekRes = await fetch('http://localhost:8000/thisWeek');
+        const thisWeekRes = await fetch('http://localhost:5000/thisWeek');
         const thisWeekData = await thisWeekRes.json();
         setMenu({ thisWeek: thisWeekData });
 
-        const overallMenuRes = await fetch('http://localhost:8000/menu');
+        const overallMenuRes = await fetch('http://localhost:5000/menu');
         const overallMenuData = await overallMenuRes.json();
         setOverallMenu(overallMenuData);
       } catch (error) {

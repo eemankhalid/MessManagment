@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import '../menu.json'
 
 const Menu = () => {
   const [activeTab, setActiveTab] = useState('tab-6');
@@ -17,10 +18,10 @@ const Menu = () => {
     const fetchMenu = async () => {
       try {
 
-        const todayRes = await fetch('http://localhost:8000/today');
+        const todayRes = await fetch('http://localhost:5000/today');
         const todayData = await todayRes.json();
 
-        const thisWeekRes = await fetch('http://localhost:8000/thisWeek');
+        const thisWeekRes = await fetch('http://localhost:5000/thisWeek');
         const thisWeekData = await thisWeekRes.json();
 
         setMenu({ today: todayData, thisWeek: thisWeekData });
